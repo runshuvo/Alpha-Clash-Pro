@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Clash</title>
+    
+        
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="tailwind.config.js"></script>
+    
+</head>
+<body class="bg-[#1E1E1E] bg-[url('images/background.png')] bg-no-repeat bg-center min-h-svh">
+<!---main part-->
+
+<section id="home" class=" flex justify-center items-center min-h-screen">
+    
+    <div class=" flex-col justify-center items-center ">
+        <p class="text-white text-5xl font-medium flex justify-center lg:text-9xl ">
+            ALPHA CLASH PRO
+        </p>
+        <p class="text-white text-xs font-medium relative my-5 left-[10%] lg:text-4xl lg:left-[13%] lg:my-10">
+            Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+        </p>
+        <p onclick="play()" class="btn text-[#010313] font-semibold left-[37%] lg:text-2xl relative lg:left-[40%]" >PLAY NOW</p>
+        
+    </div>
+    
+</section>
+
+
+<section id="play" class="hidden relative flex-col justify-center items-center">
+    <div class="flex justify-center items-center">
+        <div class="artboard artboard-horizontal phone-6 border-[#2F2941] bg-[#FFFFFFB3] border-[20px] ">
+
+            <P class="relative top-0 align-text-top bg-[#2F2941] text-[#FFFFFF] text-xl font-medium w-1/2 rounded-b-xl pb-3 pl-9 mx-[25%]">
+                Don't see keyboard while typing...
+            </P>
+           <div class="flex justify-center items-center h-full">
+            <P class="text-9xl font-medium text-[#010313]">
+                Y
+            </P>
+           </div>
+
+
+        </div>
+    </div>
+
+    <div class="my-10">
+        <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">q</kbd>
+            <kbd class="kbd">w</kbd>
+            <kbd class="kbd">e</kbd>
+            <kbd class="kbd">r</kbd>
+            <kbd class="kbd">t</kbd>
+            <kbd class="kbd">y</kbd>
+            <kbd class="kbd">u</kbd>
+            <kbd class="kbd">i</kbd>
+            <kbd class="kbd">o</kbd>
+            <kbd class="kbd">p</kbd>
+          </div>
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">a</kbd>
+            <kbd class="kbd">s</kbd>
+            <kbd class="kbd">d</kbd>
+            <kbd class="kbd">f</kbd>
+            <kbd class="kbd">g</kbd>
+            <kbd class="kbd">h</kbd>
+            <kbd class="kbd">j</kbd>
+            <kbd class="kbd">k</kbd>
+            <kbd class="kbd">l</kbd>
+          </div>
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">z</kbd>
+            <kbd class="kbd">x</kbd>
+            <kbd class="kbd">c</kbd>
+            <kbd class="kbd">v</kbd>
+            <kbd class="kbd">b</kbd>
+            <kbd class="kbd">n</kbd>
+            <kbd class="kbd">m</kbd>
+            <kbd class="kbd">/</kbd>
+          </div>
+    </div>
+    <div class="flex justify-around">
+        <button class="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            <p>
+                LIFE
+            </p>
+          </button>
+
+          <button class="btn">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADa
+            0lEQVR4nO2ZS0hUURjHf6WZ2iaoaeEqLYKoFtFDWwVlBbUJQkoXURSaQhBuWlSrVkFEtKhsm1pGbYNaFKGB9BAKSntAGy2oIVJp7IUTB/5XDoMzneOcGSXuH+7mzvf9z/
+            nuOd9zIEaMGDFi/AdYAbQB3cAAkAR+6UnqnfmtFahhjqEEaAIeA2mPZ1I6jeKYVewEhqzNfQM6gaPAJiABLNCT0DvzWxcwaukNAvWzYUAFcC1jI4f03ofjcMaH6PDkyAvmyz
+            7VwingBFCaB5/RbRdXGniiNQqKhL6+WXAY2BiQ21y7EeuEC2ZMhXUSJvpUFWCNKnFHJ1NegDWmfGLY04jo/rsiAbyVzhUCY4eIJ4DNnrq+hhisAb5LbzuBYGL8G5Eax3ZFA3
+            DbMuSi/MAVp6T3OlSeabIc0CU6LQbu50iCF4B5DjyLLOc/EMCOqYxt8oQL7kr+A3AQWAWsBo4An/RbsyNXi+T7CFA7TSpjuySqDVr4twyY7u5PqO5yiUiVwJj2UE0eaNPGTNnhg
+            uOSf5RDpkcy+xw5b0renM6M0S0SUx+54KSDIb5o9vyY0yJKTq7RZq91tbYQBrXifJYPSVIkSx3ly61QbXzhqgzKpxZbJr7PeXDwUyRlHjrLpwm/JljcUeTyLTsWiuMHRTYkQh1w
+            DnihqJO2Spz9xTYk6Xm1smGJos5LKzHuLubVGhCJb32VDaZTvOeZ5OpCOHuXZ/htVwg2G86GXeIc9wy/18kDrSIxBrkgarrW55DZKpmvjpw9IRJije7zqGOJckmL3sohc1YyDx0
+            Lx3HtwUTDIEWjGRT8Cyut3vtyRrtapsIz5VGiHJNsLwHQKLIhx8TWoFBpdP4A76UbGWCe846n8VHyPuE6K0qsu2+c2QWmyr2hRJi2Mv0DYI8jxxnpvQo5wIta3ZRnl1dqGZIrkm
+            VinXWC2wiMDhGPFGH48M7ys+Co0IgmGgcVYu6UAJ5rjf5CjYOihSJ/MSObtQG5zXWKTmIwQFnkZEx0MilNO0yEmSmM7mnLJ/qLMTKNUK7hWdrymxb12K6oVJ6IQmzkEwW7TrlQ
+            r7lTtJEx9djN6uwSSoRlqmJrZXCPMnbaCrHBo5MvSjR36svoO1z+6OlVspvPHEO1vninyu6kmjPzfNG7TsnkXTvFiBEjRgxmG38Burov9POoxbkAAAAASUVORK5CYII=">
+            <p>
+                SCORE
+            </p>
+          </button>
+        
+    </div>
+
+</section>
+
+<section id="score" class="hidden bg-bg-gradient-to-t text-white   min-h-screen">
+ <div class="h-screen flex-col  items-center relative top-[300px]">
+    <div class=" flex justify-center items-center">
+        <p>
+            SCORE:
+        </p>
+        <p>
+            18
+        </p>
+       </div>
+       <div class="flex justify-center items-center">
+        <button class="btn flex justify-center">
+            PLAY NOW
+        </button>
+       </div>
+      <div class="flex justify-center items-center">
+        <p>
+            Practice will make you Pro
+        </p>
+      </div>
+ </div>
+</section>
+
+<script src="script/alpha.js"></script>
+</body> 
+</html>

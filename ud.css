@@ -1,0 +1,12 @@
+#image{
+    height: 300px;
+    width: 500px;
+    padding: 50%;
+}
+.text{
+    justify-content: center;
+    align-items: center;
+}
+#table{
+    border: 1px solid blue;
+}
