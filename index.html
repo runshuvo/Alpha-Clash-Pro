@@ -99,6 +99,7 @@
             <p>
                 LIFE
             </p>
+            <span id="life">5</span>
           </button>
 
           <button class="btn">
@@ -115,24 +116,28 @@
             <p>
                 SCORE
             </p>
+            <span id="score">0</span>
           </button>
         
     </div>
 
 </section>
 
-<section id="score" class="hidden bg-bg-gradient-to-t text-white   min-h-screen">
+<section id="scoreCard" class="hidden bg-bg-gradient-to-t text-white   min-h-screen">
  <div class="h-screen flex-col  items-center relative top-[300px]">
     <div class=" flex justify-center items-center">
         <p>
             SCORE:
         </p>
-        <p>
+        <p id="scoreNum">
             18
         </p>
        </div>
        <div class="flex justify-center items-center">
-        <button class="btn flex justify-center">
+        <h1>
+            
+        </h1>
+        <button onclick="playAgain()" class="btn flex justify-center">
             PLAY NOW
         </button>
        </div>
