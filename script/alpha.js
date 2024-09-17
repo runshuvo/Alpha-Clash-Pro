@@ -36,6 +36,13 @@ document.addEventListener('keyup',keyPressHandle )
 function keyPressHandle(event){
 const keyPressed = event.key ;
 console.log(keyPressed);
+if(keyPressed==='Escape'){
+    const playCard=document.getElementById('play');
+    playCard.classList.add('hidden');
+
+    const scoreCard=document.getElementById('home');
+    scoreCard.classList.remove('hidden');
+}
 const keyShowed =document.getElementById('textArea');
 const keyshowed =keyShowed.innerText.toLowerCase();
 
